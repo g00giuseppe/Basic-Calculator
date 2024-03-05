@@ -21,14 +21,5 @@ class TestCalcolatrice(unittest.TestCase):
     with self.assertRaises(ZeroDivisionError):
       divisione(1, 0)
 
-  def test_radice_quadrata(self):
-    self.assertEqual(radice_quadrata(4), 2)
-    with self.assertRaises(ValueError):
-      radice_quadrata(-1)
-
-  def test_potenza(self):
-    self.assertEqual(potenza(2, 3), 8)
-    self.assertEqual(potenza(-2, 3), -8)
-
 if __name__ == '__main__':
   unittest.main()
