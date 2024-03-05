@@ -17,7 +17,7 @@ class TestCalcolatrice(unittest.TestCase):
     self.assertEqual(moltiplicazione(-2, -3), 6)
 
   def test_divisione(self):
-    self.assertEqual(divisione(6, 0), 3)
+    self.assertEqual(divisione(6, 2), 3)
     with self.assertRaises(ZeroDivisionError):
       divisione(1, 0)
 
